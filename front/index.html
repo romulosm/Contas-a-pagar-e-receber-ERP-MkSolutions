@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="./assets/jquery-3.5.1.min.js"></script>
+        <script src="./assets/app.js"></script>
+        <link rel="stylesheet" href="./assets/style.css">
+    </head>
+    <body>
+        <form>
+            <label>Tipo de Relatório</label>
+            <select name="tipo" id="tipo">
+                <option value="#">Escolha o tipo do relatório</option>
+                <option value="receber">Contas a Receber</option>
+                <option value="pagar">Contas a Pagar</option>
+            </select>
+            <br/><br/>
+            <label>Data Inicial</label>
+            <input type="date" name="data_inicial" id="data_inicial" />
+            <br>
+            <label>Data Final:</label>
+            <input type="date" name="data_final" id="data_final" />
+            <br/><br/>
+            <button type="button" class="button-upload" id="get_result">Buscar</button>
+            <p id="message" class="message-not-show">Você receberá o arquivo por e-mail quando estiver pronto!</p>
+            <p id="message-alert" class="message-not-show">Ocorreu um erro! Escolha um tipo de relatório!</p>
+        </form>
+        <div class="modal"></div>
+    </body>
+</html>

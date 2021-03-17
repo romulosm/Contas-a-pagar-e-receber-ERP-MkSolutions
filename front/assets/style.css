@@ -1,0 +1,59 @@
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('http://i.stack.imgur.com/FhHRx.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+body.loading .modal {
+    overflow: hidden;   
+}
+
+body.loading .modal {
+    display: block;
+}
+
+form{
+    width: 70%;
+    margin: auto;
+    padding: 100px;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.button-upload{
+    padding: 10px;
+    border: 0px;
+    background-color: #e07034;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button-upload:hover{
+    background-color: green;
+}
+
+.message-not-show{
+    display:none;
+}
+
+.message-show{
+    color:blue;
+    display:block;
+    margin:auto;
+}
+
+.message-show-alert{
+    color:red;
+    display:block;
+    margin:auto;
+}
