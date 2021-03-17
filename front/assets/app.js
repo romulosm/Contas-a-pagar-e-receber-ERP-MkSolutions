@@ -23,9 +23,9 @@ $(document).ready(function(){
         }
         var url = "";
         if($('#tipo').val()=="receber"){
-            url = 'http://186.250.8.83:3000/contas'
+            url = ''
         }else if($('#tipo').val()=="pagar"){
-            url = 'http://186.250.8.83:3000/contas_pagar'
+            url = ''
         }
         if(url!=""){
             $.ajax({
